@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+header{
+    padding: 35px 0;
+    color: white;
+    background-color: #09C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>h1{
+    font-size: 40pt;
+}
+
+div, p{
+    text-align: center;
+}
+
+.none{
+    display: none;
+}
+
+
+/* NAV */
+nav{
+    background-color: white;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 20vw;
+    padding: 10px 0;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    padding: 8px 18px;
+    transition: 0.4s;
+    text-decoration: none;
+    color: black;
+    width:100%;
+    transition: 0.3s;
+}
+
+nav>ul>li>a:hover{
+    color: grey;
+    transition: 0.3s;
+}
+
+/* AUTH */
+.seConnecter{
+    display: flex;
+    flex-direction: column;
+}
+
+/* LISTE TACHES */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.todoOne{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.resolved{
+    width: 15px;
+    height: 15px;
+}
+
+.resolved.true{
+    background-color: green;
+}
+
+.resolved.false{
+    background-color: red;
+}
